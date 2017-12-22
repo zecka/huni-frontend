@@ -2,22 +2,6 @@
 define( 'HUNI_VERSION', '1.0.0' );
 define( 'HUNI_TEXT_DOMAIN', 'huni' );
 
-/*
- * Load Redux Frameweok
- *
- *
- */
- 
-if ( !class_exists( 'ReduxFramework' ) && file_exists( dirname( __FILE__ ) . '/ReduxFramework/ReduxCore/framework.php' ) ) {
-    require_once( dirname( __FILE__ ) . '/ReduxFramework/ReduxCore/framework.php' );
-}
-if ( !isset( $redux_demo ) && file_exists( dirname( __FILE__ ) . '/configs/admin/options-theme.php' ) ) {
-    require_once( dirname( __FILE__ ) . '/configs/admin/options-theme.php' );
-}
-
-if ( !isset( $redux_demo ) && file_exists( dirname( __FILE__ ) . '/configs/admin/options-theme-sample.php' ) ) {
-    require_once( dirname( __FILE__ ) . '/configs/admin/options-theme-sample.php' );
-}
 
 add_action('wp_enqueue_scripts', 'huni_enqueue_scripts');
 function huni_enqueue_scripts(){
