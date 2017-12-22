@@ -16,6 +16,7 @@ get_template_part('configs/nav');
 get_template_part('configs/sidebar');
 get_template_part('controllers/single/author-avatar');
 get_template_part('controllers/single/comments');
+get_template_part('controllers/archive/numeric-pagination');
 get_template_part('partials/breadcrumb');
 get_template_part('partials/single/comment-content');
 get_template_part('shortcodes/box-highlight');
